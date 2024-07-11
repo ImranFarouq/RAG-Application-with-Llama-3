@@ -12,29 +12,27 @@ This project implements a Retrieval-Augmented Generation (RAG) application using
 ## Installation
 
 1. Install the required packages:
-    
-    pip install ollama langchain beautifulsoup4 chromadb gradio
-    ollama pull llama3
-    ollama pull nomic-embed-text
-
+```python
+pip install ollama langchain beautifulsoup4 chromadb gradio
+ollama pull llama3
+ollama pull nomic-embed-text
+```
 2. Pull the necessary models using Ollama:
-    
-    ollama pull llama3
-    ollama pull nomic-embed-text
-
+```python
+ollama pull llama3
+ollama pull nomic-embed-text
+```
 ## Usage
 
 The application allows users to input a URL and a question. It then scrapes the content from the URL, processes it, and uses the RAG technique with LLaMA 3 to generate an answer based on the retrieved information.
 
 To run the Gradio UI:
 
-        ```python
-        '''
-        from Gradio_UI import launch_gradio
+```python
+from Gradio_UI import launch_gradio
 
-        launch_gradio()
-        '''
-        ```
+launch_gradio()
+```
 
 ![RAG Application Screenshot](images/rag_app_screenshot.png)
 
